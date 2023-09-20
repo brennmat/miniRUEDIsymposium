@@ -1,0 +1,115 @@
+\documentclass[12pt]{extbook}
+
+\usepackage[a4paper,margin=1.2in,innermargin=1.2in]{geometry}
+\usepackage[parfill]{parskip}
+
+\usepackage{mathpazo} % add possibly `sc` and `osf` options
+\usepackage{amssymb}
+\usepackage{siunitx}
+\usepackage[version=4]{mhchem}
+\usepackage{needspace}
+\usepackage{marginnote}
+\renewcommand*{\marginfont}{\sffamily\footnotesize}
+
+% \usepackage{imakeidx}
+% \usepackage{hyperref}
+% \makeindex[intoc]
+
+\usepackage{etoolbox}
+\newcommand{\indexauthors}[1]{%
+  \forcsvlist{\index}{#1}
+}
+
+\newcommand{\abstract}[2]{{
+\begin{center}
+\bfseries #1
+\end{center}}
+\par
+\input{#2}}
+
+\newenvironment{conf-abstract}[4]{
+\begin{center}
+{\Large\bfseries #1}\par
+\medskip
+{\bfseries #2}\par
+{#3\par}
+\end{center}
+{\small #4}
+\medskip
+}{
+\clearpage
+}
+
+
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{-1}
+\pagestyle{plain}
+
+\begin{document}
+
+\thispagestyle{empty}
+\begin{center}
+
+{\LARGE \bf miniRUEDI Symposium 2023}
+
+\bigskip
+\bigskip
+\bigskip
+
+{\large \bf Eawag, 8600 Dübendorf, Switzerland}
+
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+
+\begin{tabular}{ll}
+
+\multicolumn{2}{l}{\bf Tuesday, 21 Nov 2023}\\[2ex]
+9:30  -- 10:00	&	Welcome coffee and snacks\\
+10:00 -- 10:50	&	Presentations\\
+11:50 -- 11:10	&	Break\\
+11:10 -- 12:00	& Presentations\\
+12:00 -- 14:00	&	Lunch at Eawag\\
+14:00 -- 15:15	&	Presentations\\
+15:15 -- 15:45	&	Break\\
+15:45 -- 17:00	&	Presentations\\[8ex]
+
+\multicolumn{2}{l}{\bf Wednesday, 22 Nov 2023}\\[2ex]
+9:30  -- 10:00	&	Coffee and snacks\\
+10:00 -- 10:50	&	Presentations\\
+11:50 -- 11:10	&	Break\\
+11:10 -- 12:00	& Presentations\\
+12:00 -- 14:00	&	Lunch at Eawag\\
+14:00 -- 15:15	&	Presentations\\
+15:15 -- 15:45	&	Break\\
+15:45 -- 17:00	&	Presentations\\
+19:00 (open end)	&	Group dinner in Zürich\\[8ex]
+
+\multicolumn{2}{l}{\bf Thursday, 23 Nov 2023}\\[2ex]
+9:30  -- 10:00	&	Coffee and snacks\\
+10:00 -- 10:50	&	Presentations\\
+11:50 -- 11:10	&	Break\\
+11:10 -- 12:00	& Presentations\\
+12:00 -- 14:00	&	Lunch at Eawag\\
+14:00 -- 15:15	&	miniRUEDI hands-on, lab tour\\[1.5ex]
+
+End of miniRUEDI Symposium
+\end{tabular}
+
+\end{center}
+
+\clearpage
+
+\abstract{DATE / TIME HERE}{abstracts/Brennwald}
+\abstract{DATE / TIME HERE}{abstracts/Engelhardt}
+\abstract{DATE / TIME HERE}{abstracts/Mtili}
+\abstract{DATE / TIME HERE}{abstracts/Roques}
+\abstract{DATE / TIME HERE}{abstracts/vanRooyen}
+\abstract{DATE / TIME HERE}{abstracts/Kimani}
+\abstract{DATE / TIME HERE}{abstracts/Strauch_Zimmer}
+
+
+\end{document}
