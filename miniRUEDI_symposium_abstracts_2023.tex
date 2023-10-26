@@ -35,13 +35,23 @@
 \end{center}
 \bigskip}
 
+\renewcommand{\breaktime}[1]{}
+
+\newenvironment{absolutelynopagebreak}
+  {\par\nobreak\vfil\penalty0\vfilneg
+   \vtop\bgroup}
+  {\par\xdef\tpd{\the\prevdepth}\egroup
+   \prevdepth=\tpd}
+
 \newcommand{\abstract}[2]{{
 \bigskip
 \begin{center}
-\bfseries #1
+\large\bfseries #1
 \end{center}}
 \par
-\input{#2}}
+\input{#2}
+\clearpage
+}
 
 \newenvironment{conf-abstract}[4]{
 \begin{center}
@@ -102,18 +112,18 @@
 10:10 -- 11:10	&	Presentations\\   % 3 presentations
 11:10 -- 11:40	&	Break\\
 11:40 -- 12:40	& Presentations\\   % 3 presentations
-12:30 -- 14:00	&	Lunch at Eawag\\
+12:40 -- 14:00	&	Lunch at Eawag\\
 14:00 -- 15:00	&	Presentations\\   % 3 presentations
 15:00 -- 15:30	&	Break\\
 15:30 -- 16:30	&	Presentations\\[8ex]   % 3 presentations
 
 \multicolumn{2}{c}{\bf Wednesday, 22 Nov 2023}\\[2ex]
 % Aqualino
-9:30  -- 10:00	&	Coffee and snacks\\
-10:00 -- 11:00	&	Presentations\\   % 3 presentations
-11:00 -- 11:20	&	Break\\
-11:20 -- 12:20	& Presentations\\   % 3 presentations
-12:20 -- 14:00	&	Lunch at Eawag\\
+9:00  -- 9:30	&	Coffee and snacks\\
+9:30  -- 10:30	&	Presentations\\   % 3 presentations
+10:30 -- 11:00	&	Break\\
+11:00 -- 12:00	& Presentations\\   % 3 presentations
+12:00 -- 14:00	&	Lunch at Eawag\\
 14:00 -- 15:00	&	Presentations\\   % 3 presentations
 15:00 -- 15:30	&	Break\\
 15:30 -- 16:30	&	Presentations\\   % 3 presentations
@@ -142,7 +152,6 @@
 %%%%%%%% DAY 1
 \dayheader{1}
 
-
 % Intro, overview
 \abstract{10:10--10:30}{abstracts/Kipfer} % overview examples
 \abstract{10:30--10:50}{abstracts/Daskalopoulou} % eger rift, hartusov mofette, magmatic CO2
@@ -153,82 +162,62 @@
 
 \abstract{11:40--12:00}{abstracts/Mtili} % magmatic fluids, Rungwe Volcanic Province
 \abstract{12:00--12:20}{abstracts/Giroud} % seismics, deep fluids
-\abstract{14:00--14:20}{abstracts/Roques} % seismics, gas release from rocks
+\abstract{12:20--12:40}{abstracts/Roques} % seismics, gas release from rocks
 
 \breaktime{ / Lunch}
 
-\abstract{14:20--14:40}{abstracts/Lightfoot} % seismics, gas release from rocks
-\abstract{14:40--15:00}{abstracts/Dutoit} % drill gas monitoring
-\abstract{16:10--16:30}{abstracts/Finger} %%% würde gerne am Dienstag präsentieren
+\abstract{14:00--14:20}{abstracts/Lightfoot} % seismics, gas release from rocks
+\abstract{14:20--14:40}{abstracts/Dutoit} % drill gas monitoring
+\abstract{14:40--15:00}{abstracts/Finger} %%% würde gerne am Dienstag präsentieren
 
 \breaktime{30 min}
 
 \abstract{15:30--15:50}{abstracts/Strauch_Zimmer} % geothermal fluids, pump test
-\abstract{DATE / TIME HERE}{abstracts/vanRooyen} % Hardwald
-\abstract{15:50--16:10}{abstracts/Ortega} % wetlands, IAEA approach
+\abstract{15:50--16:10}{abstracts/vanRooyen} % Hardwald
+\abstract{16:10--16:30}{abstracts/Ortega} % wetlands, IAEA approach
 
 
 
 
 %%%%%%%% DAY 2
 \dayheader{2}
-
-
-
-
-
-
-
-
-
-
-
-\abstract{DATE / TIME HERE}{abstracts/Engelhardt} % technisches, Omnistar
-\abstract{DATE / TIME HERE}{abstracts/Picard} % technisches, offline samples
-\abstract{DATE / TIME HERE}{abstracts/Hillegonds} % technisches, offline samples
+\abstract{9:30--9:50}{abstracts/Jacops} % lab, gas diffusion in clay rocks
+\abstract{9:50--10:10}{abstracts/Tomonaga} % GAST, rad waste
+\abstract{10:10--10:30}{abstracts/Kim} % He, rad waste
 
 \breaktime{30 min}
 
-\abstract{DATE / TIME HERE}{abstracts/Jacops} % lab, gas diffusion in clay rocks
-\abstract{14:40--15:00}{abstracts/Tomonaga} % GAST, rad waste
-\abstract{DATE / TIME HERE}{abstracts/Kim} % He, rad waste
+\abstract{11:00--11:20}{abstracts/vanLeeuw} % microbes, radwaste %%% Regarding the planning, our flight will arrive in Zurich on the 21st in the late afternoon, so it would be convenient to schedule our presentation on Wednesday or Thursday morning.
+\abstract{11:20--11:40}{abstracts/Currle} % microbes, riverbank filtration
+\abstract{11:40--12:00}{abstracts/Wang} % CO2, CH4 turnover and massbalance in groundwater-fed river
+% soil / water / atmosphere
 
 \breaktime{ / Lunch}
 
-\abstract{DATE / TIME HERE}{abstracts/vanLeeuw} % microbes, radwaste %%% Regarding the planning, our flight will arrive in Zurich on the 21st in the late afternoon, so it would be convenient to schedule our presentation on Wednesday or Thursday morning.
-\abstract{DATE / TIME HERE}{abstracts/Currle} % microbes, riverbank filtration
-\abstract{DATE / TIME HERE}{abstracts/Wang} % CO2, CH4 turnover and massbalance in groundwater-fed river
-% soil / water / atmosphere
+\abstract{14:00--14:20}{abstracts/Brennwald} % Geothermal groundwater input to rivers
+\abstract{14:20--14:40}{abstracts/Blanc} % He injection to river as artificial tracer
+\abstract{14:40--15:00}{abstracts/Marion} % trees
 
 \breaktime{30 min}
 
-\abstract{DATE / TIME HERE}{abstracts/Brennwald} % Geothermal groundwater input to rivers
-\abstract{DATE / TIME HERE}{abstracts/Blanc} % He injection to river as artificial tracer
-\abstract{DATE / TIME HERE}{abstracts/Marion} % trees
-
-
-
-
-
-
-
-
-
+\abstract{15:30--15:50}{abstracts/Picard} % technisches, offline samples
+\abstract{15:50--16:10}{abstracts/Hillegonds} % technisches, offline samples
+\abstract{16:10--16:30}{abstracts/Engelhardt} % technisches, Omnistar
 
 
 %%%%%%%% DAY 3
 \dayheader{3}
 
 % groundwater, (not so) shallow
-\abstract{DATE / TIME HERE}{abstracts/Musy} % Fuji
-\abstract{DATE / TIME HERE}{abstracts/Zhao} % Golmud
-\abstract{DATE / TIME HERE}{abstracts/GroegerTrampe} % N2 excess, nitrate pollution
+\abstract{9:30--9:50}{abstracts/Musy} % Fuji
+\abstract{9:50--10:10}{abstracts/Zhao} % Golmud
+\abstract{10:10--10:30}{abstracts/GroegerTrampe} % N2 excess, nitrate pollution
 
 \breaktime{30 min}
 
 
-\abstract{DATE / TIME HERE}{abstracts/Iwe} % surface water
-\abstract{DATE / TIME HERE}{abstracts/Slagter} % Seybold
+\abstract{11:00--11:20}{abstracts/Iwe} % surface water
+\abstract{11:20--11:40}{abstracts/Slagter} % Seybold
 
 
 
