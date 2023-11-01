@@ -10,6 +10,9 @@
 \usepackage{needspace}
 \usepackage{marginnote} \renewcommand*{\marginfont}{\sffamily\footnotesize}
 \usepackage{wasysym}
+\usepackage[yyyymmdd]{datetime}
+
+\renewcommand{\dateseparator}{--}
 
 
 % \usepackage{imakeidx}
@@ -107,19 +110,19 @@
 
 \multicolumn{2}{c}{\bf Tuesday, 21 Nov 2023}\\[2ex]
 % Aqualino
-9:30  -- 10:00	&	Coffee and snacks\\
-10:00 -- 10:10	&	Welcome\\
-10:10 -- 11:10	&	Presentations\\   % 3 presentations
-11:10 -- 11:40	&	Break\\
-11:40 -- 12:40	& Presentations\\   % 3 presentations
-12:40 -- 14:00	&	Lunch at Eawag\\
+9:00  -- 9:30	  &	Coffee and snacks\\
+9:30  -- 9:40	  &	Welcome\\
+9:40  -- 10:40	&	Presentations\\   % 3 presentations
+10:40 -- 11:10	&	Break\\
+11:10 -- 12:10	& Presentations\\   % 3 presentations
+12:10 -- 14:00	&	Lunch at Eawag\\
 14:00 -- 15:00	&	Presentations\\   % 3 presentations
 15:00 -- 15:30	&	Break\\
 15:30 -- 16:30	&	Presentations\\[8ex]   % 3 presentations
 
 \multicolumn{2}{c}{\bf Wednesday, 22 Nov 2023}\\[2ex]
 % Aqualino
-9:00  -- 9:30	&	Coffee and snacks\\
+9:00  -- 9:30	  &	Coffee and snacks\\
 9:30  -- 10:30	&	Presentations\\   % 3 presentations
 10:30 -- 11:00	&	Break\\
 11:00 -- 12:00	& Presentations\\   % 3 presentations
@@ -141,6 +144,11 @@
 %%% End of miniRUEDI Symposium
 \end{tabular}
 
+\enlargethispage{2cm}
+\vfill
+\renewcommand{\dateseparator}{--}
+{\hfill \tiny \today}
+
 \end{center}
 
 
@@ -152,31 +160,27 @@
 %%%%%%%% DAY 1
 \dayheader{1}
 
-% Intro, overview
-\abstract{10:10--10:30}{abstracts/Kipfer} % overview examples
-\abstract{10:30--10:50}{abstracts/Daskalopoulou} % eger rift, hartusov mofette, magmatic CO2
-\abstract{10:50--11:10}{abstracts/Kimani} % magmatic fluids, Rungwe Volcanic Province
-
+\abstract{9:40--10:00}{abstracts/Daskalopoulou} % eger rift, hartusov mofette, magmatic CO2
+\abstract{10:00--10:20}{abstracts/Kimani} % magmatic fluids, Rungwe Volcanic Province
+\abstract{10:20--10:40}{abstracts/Mtili} % magmatic fluids, Rungwe Volcanic Province
 
 \breaktime{30 min}
 
-\abstract{11:40--12:00}{abstracts/Mtili} % magmatic fluids, Rungwe Volcanic Province
-\abstract{12:00--12:20}{abstracts/Giroud} % seismics, deep fluids
-\abstract{12:20--12:40}{abstracts/Roques} % seismics, gas release from rocks
+\abstract{11:10--11:30}{abstracts/Giroud} % seismics, deep fluids
+\abstract{11:30--11:50}{abstracts/Roques} % seismics, gas release from rocks
+\abstract{11:50--12:10}{abstracts/Lightfoot} % seismics, gas release from rocks
 
 \breaktime{ / Lunch}
 
-\abstract{14:00--14:20}{abstracts/Lightfoot} % seismics, gas release from rocks
-\abstract{14:20--14:40}{abstracts/Dutoit} % drill gas monitoring
+\abstract{14:00--14:20}{abstracts/Dutoit} % drill gas monitoring
+\abstract{14:20--14:40}{abstracts/Strauch_Zimmer} % geothermal fluids, pump test
 \abstract{14:40--15:00}{abstracts/Finger} %%% würde gerne am Dienstag präsentieren
 
 \breaktime{30 min}
 
-\abstract{15:30--15:50}{abstracts/Strauch_Zimmer} % geothermal fluids, pump test
+\abstract{15:30--15:50}{abstracts/Kipfer} % (groundwater) examples
 \abstract{15:50--16:10}{abstracts/vanRooyen} % Hardwald
 \abstract{16:10--16:30}{abstracts/Ortega} % wetlands, IAEA approach
-
-
 
 
 %%%%%%%% DAY 2
