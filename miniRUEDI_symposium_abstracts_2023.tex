@@ -24,13 +24,6 @@
   \forcsvlist{\index}{#1}
 }
 
-\newcommand{\dayheader}[1]{
-\clearpage
-\begin{center}
-\Large\bfseries Day #1
-\end{center}
-\bigskip}
-
 \newcommand{\breaktime}[1]{
 \bigskip
 \begin{center}
@@ -86,17 +79,16 @@
 \thispagestyle{empty}
 \begin{center}
 
-{\LARGE \bf miniRUEDI Symposium 2023}
+{\LARGE \bf miniRUEDI Symposium}
 
 \bigskip
-\bigskip
-\bigskip
 
-{\large \bf Eawag, 8600 Dübendorf, Switzerland}
+{\large \bf 21--23 November 2023}
 
 \bigskip
-\bigskip
-\bigskip
+
+{\large \bf Eawag, Überlandstrasse 133, 8600 Dübendorf, Switzerland}
+
 \bigskip
 \bigskip
 \bigskip
@@ -106,13 +98,18 @@
 % total time: 600 min
 % --> 20 min per presentation (12 min + 5 min question + 3 min change)
 
-\begin{tabular}{r@{\hskip 0.5in}l}
+
+
+\newcolumntype{u}[1]{D{--}{--}{#1}}
+
+
+\begin{tabular}{c@{\hskip 0.5in}l}
 
 \multicolumn{2}{c}{\bf Tuesday, 21 Nov 2023}\\[2ex]
 % Aqualino
-9:00  -- 9:30	  &	Coffee and snacks\\
-9:30  -- 9:40	  &	Welcome\\
-9:40  -- 10:40	&	Presentations\\   % 3 presentations
+\phantom{1}9:00  -- \phantom{1}9:30	  &	Coffee and snacks\\
+\phantom{1}9:30  -- \phantom{1}9:40	  &	Welcome\\
+\phantom{1}9:40  -- 10:40	&	Presentations\\   % 3 presentations
 10:40 -- 11:10	&	Break\\
 11:10 -- 12:10	& Presentations\\   % 3 presentations
 12:10 -- 14:00	&	Lunch at Eawag\\
@@ -122,8 +119,8 @@
 
 \multicolumn{2}{c}{\bf Wednesday, 22 Nov 2023}\\[2ex]
 % Aqualino
-9:00  -- 9:30	  &	Coffee and snacks\\
-9:30  -- 10:30	&	Presentations\\   % 3 presentations
+\phantom{1}9:00  -- \phantom{1}9:30	  &	Coffee and snacks\\
+\phantom{1}9:30  -- 10:30	&	Presentations\\   % 3 presentations
 10:30 -- 11:00	&	Break\\
 11:00 -- 12:00	& Presentations\\   % 3 presentations
 12:00 -- 14:00	&	Lunch at Eawag\\
@@ -134,11 +131,11 @@
 
 \multicolumn{2}{c}{\bf Thursday, 23 Nov 2023}\\[2ex]
 % C23
-9:30  -- 10:00	&	Coffee and snacks\\   % 3 presentations
-10:00 -- 11:00	&	Presentations\\
-11:00 -- 11:20	&	Break\\
-11:20 -- 12:20	& Presentations\\       % 3 presentations
-12:20 -- 14:00	&	Lunch at Eawag\\
+\phantom{1}9:00  -- \phantom{1}9:30	  &	Coffee and snacks\\
+\phantom{1}9:30  -- 10:30	&	Presentations\\   % 3 presentations
+10:30 -- 11:00	&	Break\\
+11:00 -- 11:40	& Presentations\\   % 2 presentations
+12:00 -- 14:00	&	Lunch at Eawag\\
 14:00 -- 15:00	&	miniRUEDI hands-on, lab tour\\[1.5ex]
 
 %%% End of miniRUEDI Symposium
@@ -151,6 +148,7 @@
 
 \end{center}
 
+\clearpage
 
 
 % intro/overview, then bottom-up
@@ -158,83 +156,68 @@
 
 
 %%%%%%%% DAY 1
-\dayheader{1}
 
-\abstract{9:40--10:00}{abstracts/Daskalopoulou} % eger rift, hartusov mofette, magmatic CO2
-\abstract{10:00--10:20}{abstracts/Kimani} % magmatic fluids, Rungwe Volcanic Province
-\abstract{10:20--10:40}{abstracts/Mtili} % magmatic fluids, Rungwe Volcanic Province
+\abstract{21 Nov 2023, 9:40--10:00}{abstracts/Daskalopoulou} % eger rift, hartusov mofette, magmatic CO2
+\abstract{21 Nov 2023, 10:00--10:20}{abstracts/Kimani} % magmatic fluids, Rungwe Volcanic Province
+\abstract{21 Nov 2023, 10:20--10:40}{abstracts/Mtili} % magmatic fluids, Rungwe Volcanic Province
 
 \breaktime{30 min}
 
-\abstract{11:10--11:30}{abstracts/Giroud} % seismics, deep fluids
-\abstract{11:30--11:50}{abstracts/Roques} % seismics, gas release from rocks
-\abstract{11:50--12:10}{abstracts/Lightfoot} % seismics, gas release from rocks
+\abstract{21 Nov 2023, 11:10--11:30}{abstracts/Giroud} % seismics, deep fluids
+\abstract{21 Nov 2023, 11:30--11:50}{abstracts/Roques} % seismics, gas release from rocks
+\abstract{21 Nov 2023, 11:50--12:10}{abstracts/Lightfoot} % seismics, gas release from rocks
 
 \breaktime{ / Lunch}
 
-\abstract{14:00--14:20}{abstracts/Dutoit} % drill gas monitoring
-\abstract{14:20--14:40}{abstracts/Strauch_Zimmer} % geothermal fluids, pump test
-\abstract{14:40--15:00}{abstracts/Finger} %%% würde gerne am Dienstag präsentieren
+\abstract{21 Nov 2023, 14:00--14:20}{abstracts/Dutoit} % drill gas monitoring
+\abstract{21 Nov 2023, 14:20--14:40}{abstracts/Strauch_Zimmer} % geothermal fluids, pump test
+\abstract{21 Nov 2023, 14:40--15:00}{abstracts/Finger} %%% würde gerne am Dienstag präsentieren
 
 \breaktime{30 min}
 
-\abstract{15:30--15:50}{abstracts/Kipfer} % (groundwater) examples
-\abstract{15:50--16:10}{abstracts/vanRooyen} % Hardwald
-\abstract{16:10--16:30}{abstracts/Ortega} % wetlands, IAEA approach
+\abstract{21 Nov 2023, 15:30--15:50}{abstracts/Kipfer} % (groundwater) examples
+\abstract{21 Nov 2023, 15:50--16:10}{abstracts/vanRooyen} % Hardwald
+\abstract{21 Nov 2023, 16:10--16:30}{abstracts/Ortega} % wetlands, IAEA approach
 
 
 %%%%%%%% DAY 2
-\dayheader{2}
-\abstract{9:30--9:50}{abstracts/Jacops} % lab, gas diffusion in clay rocks
-\abstract{9:50--10:10}{abstracts/Tomonaga} % GAST, rad waste
-\abstract{10:10--10:30}{abstracts/Kim} % He, rad waste
+\abstract{22 Nov 2023, 9:30--9:50}{abstracts/Jacops} % lab, gas diffusion in clay rocks
+\abstract{22 Nov 2023, 9:50--10:10}{abstracts/Tomonaga} % GAST, rad waste
+\abstract{22 Nov 2023, 10:10--10:30}{abstracts/Kim} % He, rad waste
 
 \breaktime{30 min}
 
-\abstract{11:00--11:20}{abstracts/vanLeeuw} % microbes, radwaste %%% Regarding the planning, our flight will arrive in Zurich on the 21st in the late afternoon, so it would be convenient to schedule our presentation on Wednesday or Thursday morning.
-\abstract{11:20--11:40}{abstracts/Currle} % microbes, riverbank filtration
-\abstract{11:40--12:00}{abstracts/Wang} % CO2, CH4 turnover and massbalance in groundwater-fed river
+\abstract{22 Nov 2023, 11:00--11:20}{abstracts/vanLeeuw} % microbes, radwaste %%% Regarding the planning, our flight will arrive in Zurich on the 21st in the late afternoon, so it would be convenient to schedule our presentation on Wednesday or Thursday morning.
+\abstract{22 Nov 2023, 11:20--11:40}{abstracts/Currle} % microbes, riverbank filtration
+\abstract{22 Nov 2023, 11:40--12:00}{abstracts/Wang} % CO2, CH4 turnover and massbalance in groundwater-fed river
 % soil / water / atmosphere
 
 \breaktime{ / Lunch}
 
-\abstract{14:00--14:20}{abstracts/Brennwald} % Geothermal groundwater input to rivers
-\abstract{14:20--14:40}{abstracts/Blanc} % He injection to river as artificial tracer
-\abstract{14:40--15:00}{abstracts/Marion} % trees
+\abstract{22 Nov 2023, 14:00--14:20}{abstracts/Brennwald} % Geothermal groundwater input to rivers
+\abstract{22 Nov 2023, 14:20--14:40}{abstracts/Blanc} % He injection to river as artificial tracer
+\abstract{22 Nov 2023, 14:40--15:00}{abstracts/Marion} % trees
 
 \breaktime{30 min}
 
-\abstract{15:30--15:50}{abstracts/Picard} % technisches, offline samples
-\abstract{15:50--16:10}{abstracts/Hillegonds} % technisches, offline samples
-\abstract{16:10--16:30}{abstracts/Engelhardt} % technisches, Omnistar
+\abstract{22 Nov 2023, 15:30--15:50}{abstracts/Picard} % technisches, offline samples
+\abstract{22 Nov 2023, 15:50--16:10}{abstracts/Hillegonds} % technisches, offline samples
+\abstract{22 Nov 2023, 16:10--16:30}{abstracts/Engelhardt} % technisches, Omnistar
 
 
 %%%%%%%% DAY 3
-\dayheader{3}
 
 % groundwater, (not so) shallow
-\abstract{9:30--9:50}{abstracts/Musy} % Fuji
-\abstract{9:50--10:10}{abstracts/Zhao} % Golmud
-\abstract{10:10--10:30}{abstracts/GroegerTrampe} % N2 excess, nitrate pollution
+\abstract{23 Nov 2023, 9:30--9:50}{abstracts/Musy} % Fuji
+\abstract{23 Nov 2023, 9:50--10:10}{abstracts/Zhao} % Golmud
+\abstract{23 Nov 2023, 10:10--10:30}{abstracts/GroegerTrampe} % N2 excess, nitrate pollution
 
 \breaktime{30 min}
 
 
-\abstract{11:00--11:20}{abstracts/Iwe} % surface water
-\abstract{11:20--11:40}{abstracts/Slagter} % Seybold
+\abstract{23 Nov 2023, 11:00--11:20}{abstracts/Iwe} % surface water
+\abstract{23 Nov 2023, 11:20--11:40}{abstracts/Slagter} % Seybold
 
-
-
-
-
-
-
-
-
-% possible blocks
-% - technical things (like lab-based gas measurements)
-% - deep geology
-% - surface stuff (sea/ocean, lakes, groundwater)
 
 
 
